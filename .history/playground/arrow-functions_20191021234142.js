@@ -1,0 +1,24 @@
+const square = x => {
+  return x * x;
+};
+//shorthand
+const square2 = x => x * x;
+
+console.log(square(5));
+console.log(square2(9));
+
+const event = {
+  name: 'Birthday Party',
+  guestList: ['Kimbee', 'Kobe', 'Luka'],
+  printGuestList() {
+
+    that = this;
+
+    console.log('Guest list for ' + this.name);
+    this.guestList.forEach(function(guest) {
+      console.log(guest + ' is attending' + that.name);
+    });
+  }
+};
+
+event.printGuestList();
